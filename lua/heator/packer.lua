@@ -21,13 +21,10 @@ return require('packer').startup(function(use)
 	})
 
 	use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
-	
 	use('nvim-treesitter/playground')
-	
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
-	
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v2.x',
@@ -47,5 +44,9 @@ return require('packer').startup(function(use)
 		{'hrsh7th/cmp-nvim-lsp'}, -- Required
 		{'L3MON4D3/LuaSnip'},     -- Required
 	}
+    --comment plugins
 }
+   use('numToStr/Comment.nvim')
+   use('JoosepAlviste/nvim-ts-context-commentstring')
+   use('maxmellon/vim-jsx-pretty')
 end)
